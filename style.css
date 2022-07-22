@@ -1,0 +1,402 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+ /* FONTES:
+    https://br.freepik.com/fotos-gratis/fundo-preto-antigo-textura-do-grunge-papel-de-parede-escuro-quadro-negro-quadro-negro-parede-da-sala_11712558.htm#query=fundo%20preto&position=0&from_view=keyword
+    https://www.pngwing.com
+ */
+
+
+ *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    text-decoration: none;  
+ }
+ body{
+    background-image: url(./Imagens/background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* MENU */
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    padding: 5px 0 5px 0;
+    border-bottom: medium white solid;
+    background-color: rgb(97, 97, 97);
+    font-size: 10px;
+    font-family: 'Press Start 2P', cursive;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+.menu{
+    display: flex;
+}
+.header li a{
+    color: white;
+    padding: 20px;
+}
+.header li a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+.espacamento{
+    max-width: 1000px;
+    height: 65px;
+    background-color: rgb(97, 97, 97, 0.3);
+    border-left: medium solid white;
+    border-right: medium solid white
+}
+
+/* INICIO */
+
+.container_inicio{
+    background-color: rgb(97, 97, 97, 0.3);
+    height: 100vh;
+    color: white;
+    max-width: 1000px;
+    align-items:center;
+    font-family: 'Press Start 2P', cursive;
+    justify-content:center;
+    display: flex;
+    text-align: center;
+    border-left: medium solid white;
+    border-right: medium solid white;
+}
+.container_texto1{
+    margin-right: 20px;
+}
+.container_texto1 ul{
+    margin: 15px;
+}
+.link_inicio{
+    padding: 5px;
+}
+.container_img1{
+    padding-left: 35px;
+    border-left: 2px solid white;
+}
+.container_texto1 h1{
+    font-size: 30px;
+}
+.container_texto1 p{
+    font-size: 15px;
+}
+
+/* SOBRE */
+
+.container_sobre{
+    height: 100vh;
+    background-color: rgb(97, 97, 97, 0.3);
+    max-width: 1000px;
+    color: white;
+    border-left: medium solid white;
+    border-right: medium solid white;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+.container_sobre h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.container_sobre p{
+    font-size: 13px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+.container_texto2{
+    max-width: 50%;
+    margin: 15px;
+}
+.container_img2{
+    max-width: 50%;
+    padding-left: 125px;
+    border-left: 2px solid white;
+}
+
+/* HABILIDADES */
+
+.container_habilidades{
+    height: 100vh;
+    background-color: rgb(97, 97, 97, 0.3);
+    font-family: 'Press Start 2P', cursive;
+    max-width: 1000px;
+    color: white;
+    border-left: medium solid white;
+    border-right: medium solid white;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 40px 8px;
+    align-items: center;
+}
+#menu_habilidades{
+    width: 300px;
+    height: 350px;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.html{
+    border: 2px solid rgb(255, 111, 0);
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    
+}
+.img_habilidades{
+    margin-top: 20%;
+}
+.overlay_html{
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 345px;
+    position: absolute;
+    width: 295px;
+    /* background-color: black ; */
+    background-color: rgb(0, 0, 0, 0.9);
+    padding: 15% 10px 15% 10px;
+    opacity: 0;
+    justify-content: center;
+}
+.overlay_html h1{
+    font-size: 20px;
+}
+.overlay_html p{
+    font-size: 10px;
+    line-height: 1.5;
+}
+.overlay_html:hover{
+    opacity: 1;
+}
+.css{
+    border: 2px solid rgb(0, 47, 255);
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+}
+.overlay_css{
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 345px;
+    position: absolute;
+    width: 295px;
+    /* background-color: black ; */
+    background-color: rgb(0, 0, 0, 0.9);
+    padding: 15% 10px 15% 10px;
+    opacity: 0;
+    justify-content: center;
+}
+.overlay_css h1{
+    font-size: 20px;
+}
+.overlay_css p{
+    font-size: 10px;
+    line-height: 1.5;
+}
+.overlay_css:hover{
+    opacity: 1;
+}
+.js{
+    border: 2px solid rgb(255, 255, 0);
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+}
+.overlay_js{
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 345px;
+    position: absolute;
+    width: 295px;
+    /* background-color: black ; */
+    background-color: rgb(0, 0, 0, 0.9);
+    padding: 15% 10px 15% 10px;
+    opacity: 0;
+    justify-content: center;
+}
+.overlay_js h1{
+    font-size: 20px;
+}
+.overlay_js p{
+    font-size: 10px;
+    line-height: 1.5;
+}
+.overlay_js:hover{
+    opacity: 1;
+}
+
+/* PROJETO */
+
+.container_projetos{
+    height: 90vh;
+    background-color: rgb(97, 97, 97, 0.3);
+    font-family: 'Press Start 2P', cursive;
+    max-width: 1000px;
+    color: white;
+    border-left: medium solid white;
+    border-right: medium solid white;
+}
+.container_projetos h1{
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 20px;
+}
+.container_projetos ul{
+    display: grid;
+    margin: 40px;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 40px 8px;
+    align-items: center;
+    position: relative;
+}
+.container_projetos li{
+    box-shadow: 0 0 1.5em rgb(255, 255, 255);
+    border: 1px solid white;
+}
+.container_projetos ul li:hover{
+    background-image: color;
+    border: none;
+    box-shadow: 0 0 1.5em red;
+    border-radius: 10px;
+}
+.overlay_projeto{
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    background-color: rgb(0, 0, 0, 0.8);
+    padding: 10% 0 0 17%;
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+}
+.overlay_projeto2{
+    position: absolute;
+    width: 405px;
+    height: 44.6%;
+    background-color: rgb(0, 0, 0, 0.8);
+    padding: 10% 0 0 17%;
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+}
+.overlay_projeto:hover{
+    opacity: 1;
+}
+.overlay_projeto2:hover{
+    opacity: 1;
+}
+.header{
+    position: fixed;
+}
+.botao_home{
+    display: flex;
+    align-self: flex-end;
+    background-color: rgb(97, 97, 97, 0.3);
+    border-left: medium solid white;
+    border-right: medium solid white;
+    max-width: 1000px;
+    padding: 20px 0 20px 0;
+}
+
+@media (max-width: 635px){
+    body{
+        overflow: auto;
+    }
+    .container_inicio{
+        display: block;
+        padding-top: 50px;
+        max-width: 630px;
+        
+    }
+    .container_img1{
+        border-left: none;
+    }
+    .container_sobre{
+        display: block;
+        padding-top: 150px;
+        max-width: 630px;
+        text-align: center;
+        height: auto;
+    }
+    .container_texto2{
+        max-width: none;
+    }
+    .container_img2{
+        border-left: none;
+        opacity: 0;
+    }
+    .container_img2 img{
+        width: 0;
+    }
+    .container_habilidades{
+        /* grid-template-columns: repeat(2, 2fr);
+        grid-gap: 20px 1px; */
+        display: block;
+        padding-top: 30px;
+        height: 170vh;
+    }
+    #menuhabilidades{
+        width: 200px;
+        height: 150px;
+        display: block;
+    }
+    .container_projetos{
+        height: 150vh;
+        padding-top: 30px;
+        text-align: center;
+    }
+    .container_projetos ul{
+        margin: 10px;
+        grid-gap: 20px 2px;
+        padding: 0 5% 0 5%;
+        display: inline-block;
+    }
+    .container_projetos img{
+        width: 450px;
+    }
+    .overlay_projeto, .overlay_projeto2{
+        width: 451px;
+        height: 200px;
+        padding: 17% 10% 0 15%;
+    
+    }
+    .header{
+        position: absolute;
+        height: 50px;
+        font-size: 7px;
+    }
+    .header li a{
+        padding: 10px;
+    }
+    .img{
+        width: 100px;
+    }
+    .botao_home{
+        display: flex;
+        align-self: flex-end;
+        background-color: rgb(97, 97, 97, 0.3);
+        border-left: medium solid white;
+        border-right: medium solid white;
+        max-width: 1000px;
+        padding: -20px 0 0 10px;
+    }
+}
