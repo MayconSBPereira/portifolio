@@ -52,10 +52,17 @@
 }
 .espacamento{
     max-width: 1000px;
-    height: 65px;
+    height: 55px;
     background-color: rgb(97, 97, 97, 0.3);
     border-left: medium solid white;
-    border-right: medium solid white
+    border-right: medium solid white;
+}
+.espacamento_home{
+    max-width: 1000px;
+    height: 55px;
+    background-color: rgb(97, 97, 97, 0.3);
+    border-left: medium solid white;
+    border-right: medium solid white;
 }
 
 /* INICIO */
@@ -196,7 +203,6 @@
     height: 345px;
     position: absolute;
     width: 295px;
-    /* background-color: black ; */
     background-color: rgb(0, 0, 0, 0.9);
     padding: 15% 10px 15% 10px;
     opacity: 0;
@@ -226,7 +232,6 @@
     height: 345px;
     position: absolute;
     width: 295px;
-    /* background-color: black ; */
     background-color: rgb(0, 0, 0, 0.9);
     padding: 15% 10px 15% 10px;
     opacity: 0;
@@ -246,7 +251,7 @@
 /* PROJETO */
 
 .container_projetos{
-    height: 90vh;
+    height: 100vh;
     background-color: rgb(97, 97, 97, 0.3);
     font-family: 'Press Start 2P', cursive;
     max-width: 1000px;
@@ -259,6 +264,7 @@
     text-align: center;
     padding: 30px;
     padding-bottom: 20px;
+    padding-top: 40px;
 }
 .container_projetos ul{
     display: grid;
@@ -321,22 +327,29 @@
     border-right: medium solid white;
     max-width: 1000px;
     padding: 20px 0 20px 0;
+    opacity: 0;
 }
-
-@media (max-width: 635px){
+@media (max-width: 1038px){
     body{
         overflow: auto;
-        max-width: 635px;
+        /* max-width: 635px; */
         min-width: 630px;   
     }
     .espacamento{
-        min-width: 630px;   
+        max-width: 630px;
+        margin: auto;
+        padding: auto;
+    }
+    .espacamento_home{
+        width:0%;
+        height: 0%;
+        border: 0px;
     }
     .container_inicio{
         display: block;
-        padding-top: 50px;
+        padding-top: 100px;
         max-width: 630px;
-        
+        height: 100%;
     }
     .container_img1{
         border-left: none;
@@ -347,6 +360,7 @@
         max-width: 630px;
         text-align: center;
         height: auto;
+        height: 100%;
     }
     .container_texto2{
         max-width: none;
@@ -359,10 +373,13 @@
         width: 0;
     }
     .container_habilidades{
-        display: block;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 40px;
         padding-top: 30px;
         height: 170vh;
         max-width: 630px;
+        height: 100%;
     }
     #menuhabilidades{
         width: 200px;
@@ -370,17 +387,18 @@
         display: block;
     }
     .container_projetos{
-        height: 120vh;
+        height: 110vh;
         padding-top: 30px;
         text-align: center;
+        max-width: 630px;
     }
     .container_projetos ul{
-        margin: 0px;
+        margin: 50px;
         grid-gap: 20px 2px;
-        /* padding: 0 5% 0 5%; */
         padding: 5px;
-        display: inline-block;
-
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 40px;
     }
     .container_projetos img{
         width: 450px;
@@ -397,15 +415,15 @@
         background-color: rgb(97, 97, 97, 0.3);
         border-left: medium solid white;
         border-right: medium solid white;
-        max-width: 1000px;
-        /* padding: -20px 0 0 10px; */
-        height: 20vh;
+        height: 100%;
+        max-width: 630px;
+        opacity: 1;
     }
     .header{
-        position: absolute;
+        position: relative;
         height: 50px;
         font-size: 7px;
-        min-width: 630px;   
+        max-width: 520px auto;   
     }
     .header li a{
         padding: 10px;
