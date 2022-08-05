@@ -96,11 +96,20 @@
 .container_texto1 h1{
     font-size: 30px;
     line-height: 1.4;
+    animation-name: CorNome;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+@keyframes CorNome {
+    25% {color: red; font-size: 35px; }
+    50% {color: green; font-size: 30px;}
+    75% {color: blue; font-size: 35px;}
+    100% {color:yellow; font-size: 30px;}
 }
 .container_texto1 p{
     font-size: 15px;
 }
-
 /* SOBRE */
 
 .container_sobre{
@@ -262,9 +271,9 @@
 .container_projetos h1{
     align-items: center;
     text-align: center;
-    padding: 30px;
     padding-bottom: 20px;
-    padding-top: 40px;
+    padding-top: 120px;
+    height: 200px;
 }
 .container_projetos ul{
     display: grid;
@@ -273,6 +282,7 @@
     grid-gap: 40px 8px;
     align-items: center;
     position: relative;
+    padding-top: 60px;
 }
 .container_projetos li{
     box-shadow: 0 0 1.5em rgb(255, 255, 255);
@@ -387,7 +397,7 @@
         display: block;
     }
     .container_projetos{
-        height: 110vh;
+        height: 150vh;
         padding-top: 30px;
         text-align: center;
         max-width: 630px;
@@ -419,6 +429,11 @@
         max-width: 630px;
         opacity: 1;
     }
+    .botao_home img{
+        animation-name: ABotão;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+    }
     .header{
         position: relative;
         height: 50px;
@@ -430,5 +445,9 @@
     }
     .img{
         width: 100px;
+    }
+    @keyframes ABotão {
+        from {opacity: 1;}
+        to {opacity: 0;}
     }
 }
