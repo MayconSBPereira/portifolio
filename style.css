@@ -97,15 +97,15 @@
     font-size: 30px;
     line-height: 1.4;
     animation-name: CorNome;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
 }
 @keyframes CorNome {
-    25% {color: red; font-size: 35px; }
-    50% {color: green; font-size: 30px;}
-    75% {color: blue; font-size: 35px;}
-    100% {color:yellow; font-size: 30px;}
+    25% {color: red;}
+    50% {color: green;}
+    75% {color: blue;}
+    100% {color:yellow;}
 }
 .container_texto1 p{
     font-size: 15px;
@@ -271,18 +271,17 @@
 .container_projetos h1{
     align-items: center;
     text-align: center;
-    padding-bottom: 20px;
-    padding-top: 120px;
-    height: 200px;
+    padding: 50px;
+    height: 100px;
 }
 .container_projetos ul{
     display: grid;
     margin: 40px;
     grid-template-columns: repeat(2, 2fr);
-    grid-gap: 40px 8px;
+    grid-gap: 20px 2px;
     align-items: center;
     position: relative;
-    padding-top: 60px;
+    padding-top: 10px;
 }
 .container_projetos li{
     box-shadow: 0 0 1.5em rgb(255, 255, 255);
