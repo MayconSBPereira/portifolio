@@ -353,7 +353,6 @@
 @media (max-width: 1038px){
     body{
         overflow-x: hidden;
-        overflow: auto;
     }
     .header{
         text-align: center;
@@ -494,6 +493,12 @@
         to {opacity: 0;}
     }
 }
+@media (max-width: 560px){
+    body{
+        overflow-x:hidden;
+    }
+}
+
 .mobile-menu.active .line1{
     transform: rotate(-45deg) translate(-5px, 4px); 
 }
