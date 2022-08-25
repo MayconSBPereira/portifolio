@@ -18,7 +18,7 @@
     background-image: url(./Imagens/background2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 /* MENU */
@@ -349,10 +349,14 @@
     text-align: center;
     padding: 15px;
     border-top: medium white solid;
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 @media (max-width: 1038px){
     body{
         overflow-x: hidden;
+        overflow-y: auto;
     }
     .header{
         text-align: center;
@@ -460,7 +464,7 @@
         max-width: 630px;
     }
     .container_projetos ul{
-        margin: 50px;
+        margin: 50px auto;
         grid-gap: 20px 2px;
         padding: 5px;
         display: grid;
@@ -495,7 +499,63 @@
 }
 @media (max-width: 560px){
     body{
-        overflow-x:hidden;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .rodape{
+        height: 12vh;
+        text-align: center;
+        margin: auto;
+    }
+    .container_projetos{
+        height: 180vh;
+        padding-top: 30px;
+        text-align: center;
+        max-width: 630px;
+    }
+    .container_projetos ul{
+        margin: 50px auto;
+        grid-gap: 20px 2px;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 40px;
+    }
+    .container_projetos img{
+        width: 350px;
+    }
+    .overlay_projeto, .overlay_projeto2{
+        width: 350px;
+        height: auto;
+        padding: 17% 10% 0 15%;
+    
+    }
+}
+@media (max-width: 390px){
+    .container_img1 img{
+        width: 250px;
+    }
+    .container_projetos{
+        height: 180vh;
+        padding-top: 30px;
+        text-align: center;
+        max-width: 630px;
+    }
+    .container_projetos ul{
+        margin: 50px auto;
+        grid-gap: 20px 2px;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 40px;
+    }
+    .container_projetos img{
+        width: 250px;
+    }
+    .overlay_projeto, .overlay_projeto2{
+        width: 250px;
+        height: auto;
+        padding: 17% 10% 0 15%;
     }
 }
 
