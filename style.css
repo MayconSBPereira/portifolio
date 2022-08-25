@@ -361,6 +361,12 @@
         display: flex;      
         height: 10vh;
     }
+    .header li a:hover{
+        background-color:transparent;
+        color: white;
+        border-radius: none;
+        opacity: 0.5;
+    }
     .nav-list{
         position: absolute;
         top: 10vh;
