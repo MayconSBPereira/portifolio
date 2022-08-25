@@ -3,20 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <title>Portifólio</title>
     <link rel="stylesheet"  type="text/css" href="./style.css">
     <link rel="icon" type="image/x-icon" href="./Imagens/livro-icon.png">    
 </head>
 <body>
     <header class="header">
-        <a><img class="img" src="./Imagens/logo.2-removebg-preview.png" width="150px"></a>
-        <nav>
-            <ul class="menu">
-                <li><a href="#container_inicio"><b>Inicio</a></b></li>
-                <li><a href="#container_sobre"><b>Sobre mim</a></b></li>
-                <li><a href="#container_habilidades"><b>Habilidades</a></b></li>
-                <li><a href="#container_projetos"><b>Projetos</a></b></li>
+        <nav class="nav">
+            <a><img class="img" src="./Imagens/logo.2-removebg-preview.png" width="150px"></a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                    <li><a href="#container_inicio"><b>Inicio</a></b></li>
+                    <li><a href="#container_sobre"><b>Sobre mim</a></b></li>
+                    <li><a href="#container_habilidades"><b>Habilidades</a></b></li>
+                    <li><a href="#container_projetos"><b>Projetos</a></b></li>
             </ul>
         </nav>
     </header>
@@ -94,8 +99,9 @@
             </ul>
         </main>
     </div>
-    <div class="botao_home">
-        <a href="#container_inicio"><img src="./Imagens/home.png" width="50px"></a>
-    </div>
+    <footer class="rodape">
+        <h1><b>Obrigado pela atenção!</b></h1>
+    </footer>
+    <script src="./mobile-navbar.js"></script>
 </body>
 </html>
