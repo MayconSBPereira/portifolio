@@ -370,6 +370,12 @@
         border-radius: none;
         opacity: 0.5;
     }
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2.5vh;
+    }
     .nav-list{
         position: absolute;
         top: 10vh;
@@ -490,7 +496,7 @@
         padding: 10px;
     }
     .img{
-        width: 100px;
+        /* width: 100px; */
     }
     @keyframes ABotão {
         from {opacity: 1;}
