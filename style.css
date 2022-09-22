@@ -18,7 +18,7 @@
     background-image: url(./Imagens/background2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 /* MENU */
 
@@ -273,14 +273,13 @@
 /* PROJETO */
 
 .container_projetos{
-    height: 85vh;
+    height: 95vh;
     background-color: rgb(23, 23, 23, 0.7);
     font-family: 'Press Start 2P', cursive;
     max-width: 1000px;
     color: white;
     border-left: medium solid white;
     border-right: medium solid white;
-    padding-top: 10vh;
 }
 .container_projetos h1{
     align-items: center;
@@ -333,10 +332,24 @@
     opacity: 0;
     border-radius: 5%;
 }
+.overlay_projeto3{
+    position: absolute;
+    width: 405px;
+    height: 200px;
+    background-color: rgb(0, 0, 0, 0.8);
+    padding: 10% 0 0 17%;
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+    border-radius: 5%;
+}
 .overlay_projeto:hover{
     opacity: 1;
 }
 .overlay_projeto2:hover{
+    opacity: 1;
+}
+.overlay_projeto3:hover{
     opacity: 1;
 }
 .rodape{
@@ -484,7 +497,7 @@
     .container_projetos img{
         width: 450px;
     }
-    .overlay_projeto, .overlay_projeto2{
+    .overlay_projeto, .overlay_projeto2, .overlay_projeto3{
         width: 451px;
         height: 200px;
         padding: 17% 10% 0 15%;
@@ -537,7 +550,7 @@
     .container_projetos img{
         width: 350px;
     }
-    .overlay_projeto, .overlay_projeto2{
+    .overlay_projeto, .overlay_projeto2, .overlay_projeto3{
         width: 350px;
         height: auto;
         padding: 17% 10% 0 15%;
@@ -565,7 +578,7 @@
     .container_projetos img{
         width: 250px;
     }
-    .overlay_projeto, .overlay_projeto2{
+    .overlay_projeto, .overlay_projeto2, .overlay_projeto3{
         width: 250px;
         height: auto;
         padding: 17% 10% 0 15%;
