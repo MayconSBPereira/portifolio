@@ -122,7 +122,9 @@
 .container_texto1 p{
     font-size: 15px;
 }
-
+.img_home{
+    filter: drop-shadow(0 0 0 0.4rem red);
+}
 /* SOBRE */
 
 .container_sobre{
