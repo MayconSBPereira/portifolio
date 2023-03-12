@@ -15,9 +15,10 @@
     text-decoration: none;  
  }
  body{
-    background-image: url(./Imagens/background2.jpg);
+    /* background-image: url(./Imagens/background2.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+    background-color: black;
     /* overflow-y: hidden; */
 }
 /* MENU */
@@ -27,8 +28,9 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    border-bottom: medium white solid;
-    background: #23232e;
+
+    border-bottom: medium rgb(0, 255, 0) solid;
+    background: black;
     font-size: 10px;
     font-family: 'Press Start 2P', cursive;
     position: fixed;
@@ -40,11 +42,11 @@
     display: flex;
 }
 .header li a{
-    color: white;
+    color: rgb(0, 255, 0);
     padding: 20px;
 }
 .header li a:hover{
-    background-color: white;
+    background-color: rgb(0, 255, 0);
     color: black;
     border-radius: 10px;
 }
@@ -66,15 +68,15 @@
     max-width: 1000px;
     height: 55px;
     background-color: rgb(23, 23, 23, 0.7);
-    border-left: medium solid white;
-    border-right: medium solid white;
+    border-left: medium solid rgb(0, 255, 0);
+    border-right: medium solid rgb(0, 255, 0);
 }
 .espacamento_home{
     max-width: 1000px;
     height: 10vh;
     background-color: rgb(23, 23, 23, 0.7);
-    border-left: medium solid white;
-    border-right: medium solid white;
+    border-left: medium solid rgb(0, 255, 0);
+    border-right: medium solid rgb(0, 255, 0);
 }
 
 /* INICIO */
@@ -89,8 +91,8 @@
     justify-content:center;
     display: flex;
     text-align: center;
-    border-left: medium solid white;
-    border-right: medium solid white;
+    border-left: medium solid rgb(0, 255, 0);
+    border-right: medium solid rgb(0, 255, 0);
 }
 .container_texto1{
     margin-right: 20px;
@@ -132,8 +134,8 @@
     background-color: rgb(23, 23, 23, 0.7);
     max-width: 1000px;
     color: white;
-    border-left: medium solid white;
-    border-right: medium solid white;
+    border-left: medium solid rgb(0, 255, 0);
+    border-right: medium solid rgb(0, 255, 0);
     display: flex;
     align-items:center;
     justify-content: center;
@@ -167,12 +169,13 @@
     font-family: 'Press Start 2P', cursive;
     max-width: 1000px;
     color: white;
-    border-left: medium solid white;
-    border-right: medium solid white;
+    border-left: medium solid rgb(0, 255, 0);
+    border-right: medium solid rgb(0, 255, 0);
     display: grid;
     grid-template-columns: repeat(3, 2fr);
     grid-gap: 40px 8px;
     align-items: center;
+    
 }
 #menu_habilidades{
     width: 300px;
@@ -202,6 +205,8 @@
     padding: 15% 10px 15% 10px;
     opacity: 0;
     justify-content: center;
+    transition: 0.5s;
+    
 }
 .overlay_html h1{
     font-size: 20px;
@@ -231,6 +236,7 @@
     padding: 15% 10px 15% 10px;
     opacity: 0;
     justify-content: center;
+    transition: 0.5s;
 }
 .overlay_css h1{
     font-size: 20px;
@@ -260,6 +266,7 @@
     padding: 15% 10px 15% 10px;
     opacity: 0;
     justify-content: center;
+    transition: 0.5s;
 }
 .overlay_js h1{
     font-size: 20px;
@@ -275,13 +282,13 @@
 /* PROJETO */
 
 .container_projetos{
-    height: 95vh;
+    height: calc(100vh - 10vh - 5vh);
     background-color: rgb(23, 23, 23, 0.7);
     font-family: 'Press Start 2P', cursive;
     max-width: 1000px;
     color: white;
-    border-left: medium solid white;
-    border-right: medium solid white;
+    border-left: medium solid rgb(0, 255, 0);
+    border-right: medium solid rgb(0, 255, 0);
 }
 .container_projetos h1{
     align-items: center;
@@ -293,13 +300,13 @@
     display: grid;
     margin: 40px;
     grid-template-columns: repeat(2, 2fr);
-    grid-gap: 20px 2px;
+    grid-gap: 30% 10%;
     align-items: center;
     position: relative;
     padding-top: 10px;
 }
 .container_projetos li{
-    box-shadow: 0 0 1.5em rgb(255, 255, 255);
+    box-shadow: 0 0 1.5em rgb(0, 255, 0);
     border: 1px solid white;
     border-radius: 5%;
 }
@@ -359,11 +366,11 @@
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-size: 1.5vh;
-    background: #23232e;
+    background: black;
     font-family: 'Press Start 2P', cursive;
     text-align: center;
     padding: 15px;
-    border-top: medium white solid;
+    border-top: medium rgb(0, 255, 0) solid;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -513,9 +520,6 @@
     }
     .header li a{
         padding: 10px;
-    }
-    .img{
-        /* width: 100px; */
     }
     @keyframes ABotão {
         from {opacity: 1;}
